@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 80%;
+}
+
+header h1{
+    font-weight: bold;
+    color: deeppink;
+    font-size: 40px;
+}
+
+header a{
+    text-decoration: none;
+    color:gold;
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    float:right;
+    margin-top: 0;
+}
+
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.hero{
+    height: 500px;
+    width:100%;
+    margin-bottom: 10px;
+    background-image: url(./images/Butterfly.jpg);
+    background-size: cover;
+    background-position: center;
+}
