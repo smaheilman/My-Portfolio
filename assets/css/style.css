@@ -9,19 +9,28 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position:-webkit-sticky;
+    position:sticky;
     background-size: cover;
     background-position: 80%;
+    background-position: center;
+    background-attachment: fixed;
+    top:0;
+    background-image: url(./images/blueflowers.jpg);
+    z-index: 9999;
 }
 
 header h1{
     font-weight: bold;
-    color: deeppink;
+    color: rgb(90, 20, 255);
     font-size: 40px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 header a{
     text-decoration: none;
-    color:gold;
+    color:rgb(0, 255, 170);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 header nav{
@@ -45,10 +54,218 @@ header nav ul li a{
 }
 
 .hero{
-    height: 500px;
+    height: 300px;
     width:100%;
-    margin-bottom: 10px;
-    background-image: url(./images/Butterfly.jpg);
+    margin-bottom: 0px;
+    background-image: url(./images/blueflowers.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.about-me{
+    color: rgb(245, 244, 247);
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+}
+
+.about-me h2{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    text-shadow: 5px 5px 10px rgb(90, 20, 255);
+}
+
+.about-me p{
+    display: block;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    color:whitesmoke;
+   
+}
+
+.my-pic img{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-work{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px 15px 10px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(90, 20, 255);
+    font-size: 28px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.work-imgs{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+font-size: 24px;
+}
+
+.work-imgs img{
+    width: 900px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+.work-imgs img:hover{
+border-style: solid;
+border-color: seashell;
+border-width: 5px;
+height: 400px;
+width: 950px;
+}
+
+.robots, .github, .horiseon, .run-buddy {
+    position: relative;
+}
+
+.robots h3, .horiseon h3{
+    background-color: rgb(90, 20, 255);
+    color: white;
+    position:absolute;
+    bottom: 50px;
+    right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.run-buddy h3, .github h3{
+    background-color: rgb(90, 20, 255);
+    color: white;
+    position:absolute;
+    bottom: 50px;
+    left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-me{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    color: rgb(90, 20, 255);
+}
+
+#Contact-me{
+    background-color: rgb(0, 0, 0);
+    color:rgb(90, 20, 255);
+    padding: 25px 25px 25px 25px;
+    width: 100%;
+}
+
+.contact-form{
+    background-color: rgb(90, 20, 255);
+    color: rgb(0, 0, 0);
+    height: 400px;
+    border: rgb(90, 20, 255);
+    border-style: solid;
+    border-width: 5px;
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.contact-form label, .contact-form h3{
+    color:rgb(0, 0, 0);
+    background-color: rgb(90, 20, 255);
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+    margin: 5px 0 15px 0;
+}
+
+.contact-form button{
+    border-style: solid;
+    border-color: springgreen;
+    border-width: 3px;
+    background-color: dodgerblue;
+    color: springgreen;
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.contact-me p{
+    padding: 25px 25px 25px 25px;
+    font-size: 20px;
+}
+
+.contact-me a{
+    text-decoration: none;
+    color:rgb(90, 20, 255);
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(90, 20, 255);
+    margin-bottom: 0;
+    height:100px;
+    padding-top: 75px;
+}
+
+@media screen and (max-width: 980px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+.work-imgs{
+    width: 50%;
+    margin: auto;
+}
+
+.work-imgs h3{
+margin-left: 50px;
+margin-right: 50px;
+}
+}
+
+@media screen and (max-width:575px) {
+.work-imgs img{
+width:350px;
+}
 }

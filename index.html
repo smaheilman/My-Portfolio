@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Samantha Heilman</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <meta name="viewport" content="width=device-width, intial-scale=1.0"/>
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Samantha Heilman</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+</head>
+
+<header>
+    <h1>Samantha Heilman</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="#About-me">About Me</a>
+            </li>
+            <li>
+                <a href="#My-work">My Work</a>
+            </li>
+            <li>
+                <a href="#Contact-me">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+</section>
+<section class="about-me">
+    <h2 id="About-me">About Me</h2>
+    <div class="my-pic">
+        <img src="assets/css/images/Sam.jpg" alt="Picture of Samantha Heilman on a swing">
+    </div>
+    <p>
+        Hi! My name is Samantha Heilman and I am a web developer in training from Medina, Ohio. I have recently been
+        working in CSS and Html and am excited to implement them in new work!
+    </p>
     
-    <header>
-        <h1>Samantha Heilman</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#About-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#My-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#Contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-    </section>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hi! My name is Samantha Heilman and I am a web developer in training from Medina, Ohio. I have recently been working in CSS and Html and am excited to implement them in new work!  
-            </p>
-        </section>
-        <section>
-            <h2>My Work</h2>
-                <div>
-                    Run Buddy
-                </div>
-                <div>
-                    Horiseon
-                </div>
-                <div>
-                    Robot Gladiators
-                </div>
-                <div>
-                    GitHub
-                </div>
-        </section>
-        <section>
-            <h2>Contact Me!</h2>
-            <div>
-            <h3>Feel free to reach out!</h3>
-            <form>
-                <label for="contact-name">Your Name</label>
-                <input type="text" id="contact-name" placeholder="You Name"/>
+</section>
+<section class="my-work">
+    <h2 id="My-work">My Work</h2>
+    <div class="work-imgs">
+        <div class="run-buddy work-1">
+            <a href="https://smaheilman.github.io/run-buddy/">
+                <h3>Run Buddy</h3>
+            <img src="assets/css/images/Screenshot Rub-Buddy.png" alt="">
+            </a>
+        </div>
+        <div class="horiseon work-2">
+            <h3>Horiseon</h3>
+            <a href="https://smaheilman.github.io/Challenge-One/">
+            <img src="assets/css/images/ScreenshoHoriseon.png" alt="">
+            </a>
+        </div>
+        <div class="github work-1">
+           <h3>Github</h3>
+            <a href="https://github.com/smaheilman">
+            <img src="assets/css/images/ScreenshotGithub.png" alt=""> 
+            
+            </a>
+        </div>
+        <div class="robots work-2">
+            <h3>Robot Gladiators</h3>
+            <a href="https://github.com/smaheilman/robot-gladiators">
+           <img src="assets/css/images/Robots.png" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="contact-me">
+    <h2 id="Contact-me">Contact Me!</h2>
+    <div class="contact-form">
+        <h3>Feel free to reach out!</h3>
+        <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="You Name" />
 
-                <label for="contact-mesage">Message</label>
-                <textarea id="Contact-message" placeholder="Message"></textarea>
+            <label for="contact-mesage">Message</label>
+            <textarea id="Contact-message" placeholder="Message"></textarea>
 
-                <button type="submit">Send!</button>
-            </form>
-            </div>
-        </section>
-        <footer>
-
-        </footer>
+            <button type="submit">Send!</button>
+        </form>
+    </div>        
+    <p>
+            Email: <a href="smaheilman@gmail.com">smaheilman@gmail.com</a>
+            <br/>
+            Phone: 330-591-1390
+        </p>
+</section>
+<footer>
+Made by Sam
+</footer>
